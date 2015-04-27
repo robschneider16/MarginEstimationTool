@@ -1,0 +1,130 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="2741349533" file="/Users/rschneid/Documents/MATLAB/AssesmentTool/Margin_Estimation_Tool.prj" location="/Users/rschneid/Documents/MATLAB/AssesmentTool" name="Margin_Estimation_Tool" preferred-package-location="/Users/rschneid/Documents/MATLAB/AssesmentTool/Margin_Estimation_Tool/for_redistribution" preferred-package-type="package.type.app" target="target.ezdeploy.standalone" target-name="MATLAB Compiler for Standalone Applications">
+    <param.appname>Margin_Estimation_Tool</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>Robert Schneider</param.authnamewatermark>
+    <param.email>Robert.F.Schneider@jpl.nasa.gov</param.email>
+    <param.company>JPL</param.company>
+    <param.summary>This is an application used to estimate required margins for a given confidence level.</param.summary>
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>/Margin_Estimation_Tool/</param.installpath.string>
+    <param.installpath.combo>option.installpath.systemwideapp</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.intermediate>${PROJECT_ROOT}/Margin_Estimation_Tool/for_testing</param.intermediate>
+    <param.output>${PROJECT_ROOT}/Margin_Estimation_Tool/for_redistribution</param.output>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.server.ctf>${PROJECT_ROOT}/Margin_Estimation_Tool/for_testing/.ctf</param.server.ctf>
+    <param.server.readme>${PROJECT_ROOT}/Margin_Estimation_Tool/for_testing/readme.txt</param.server.readme>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>Install_From_Web</param.web.mcr.name>
+    <param.package.mcr.name>Install</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.intermediate />
+      <param.output />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.server.ctf />
+      <param.server.readme />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.no.mcr />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/Assesment_Tool.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}/ErrorWindow.fig</file>
+      <file>${PROJECT_ROOT}/ErrorWindow.m</file>
+      <file>${PROJECT_ROOT}/FormatData.fig</file>
+      <file>${PROJECT_ROOT}/FormatData.m</file>
+      <file>${PROJECT_ROOT}/GUI2.fig</file>
+      <file>${PROJECT_ROOT}/GUI2.m</file>
+      <file>${PROJECT_ROOT}/GUI3.fig</file>
+      <file>${PROJECT_ROOT}/GUI3.m</file>
+      <file>${PROJECT_ROOT}/GuiStart.fig</file>
+      <file>${PROJECT_ROOT}/GuiStart.m</file>
+      <file>${PROJECT_ROOT}/InputGui.fig</file>
+      <file>${PROJECT_ROOT}/InputGui.m</file>
+      <file>${PROJECT_ROOT}/JPLLogo.png</file>
+      <file>${PROJECT_ROOT}/PDFMaker.m</file>
+      <file>${PROJECT_ROOT}/SetupWindow.fig</file>
+      <file>${PROJECT_ROOT}/SetupWindow.m</file>
+      <file>${PROJECT_ROOT}/UpdateAxes2.m</file>
+    </fileset.resources>
+    <fileset.package>
+      <file>/Users/rschneid/Desktop/Margin Estimation Tool/Assesment Tool Notes.docx</file>
+      <file>/Users/rschneid/Desktop/Margin Estimation Tool/Directions.docx</file>
+      <file>/Users/rschneid/Desktop/Margin Estimation Tool/Example File.xlsx</file>
+    </fileset.package>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}/Margin_Estimation_Tool/for_testing" name="Margin_Estimation_Tool.app" optional="false">/Users/rschneid/Documents/MATLAB/AssesmentTool/Margin_Estimation_Tool/for_testing/Margin_Estimation_Tool.app</file>
+      <file location="${PROJECT_ROOT}/Margin_Estimation_Tool/for_testing" name="run_Margin_Estimation_Tool.sh" optional="false">/Users/rschneid/Documents/MATLAB/AssesmentTool/Margin_Estimation_Tool/for_testing/run_Margin_Estimation_Tool.sh</file>
+      <file location="${PROJECT_ROOT}/Margin_Estimation_Tool/for_testing" name="splash.png" optional="false">/Users/rschneid/Documents/MATLAB/AssesmentTool/Margin_Estimation_Tool/for_testing/splash.png</file>
+      <file location="${PROJECT_ROOT}/Margin_Estimation_Tool/for_testing" name="readme.txt" optional="true">/Users/rschneid/Documents/MATLAB/AssesmentTool/Margin_Estimation_Tool/for_testing/readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2014a.app</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.9.3</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
